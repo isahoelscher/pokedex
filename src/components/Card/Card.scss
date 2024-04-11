@@ -1,0 +1,95 @@
+@import "../../assets/global.scss";
+
+.card {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 200px;
+  height: 300px;
+	border-radius: 8px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	padding: 10px;
+	margin: 20px;
+	background-color: white;
+
+	img {
+		width: 100%;
+		border-radius: 8px;
+	}
+
+	h2 {
+    font-family: $fontPrimary;
+		font-size: 18px;
+		color: $fontDark;
+		padding: 10px;
+	}
+
+  .abilities {
+    font-family: $fontPrimary;
+    font-size: 10px;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    color: $Medium;
+  }
+
+  &.bug {
+    border: 1px solid $Bug;
+  }
+  &.dark {
+    border: 1px solid $Dark;
+  }
+  &.dragon {
+    border: 1px solid  $Dragon;
+  }
+  &.electric {
+    border: 1px solid  $Electric;
+  }
+  &.fairy {
+   border: 1px solid  $Fairy;
+  }
+  &.fighting {
+   border: 1px solid  $Fighting;
+  }
+  &.fire {
+    border: 1px solid  $Fire;
+  }
+  &.flying {
+    border: 1px solid  $Flying;
+  }
+  &.ghost {
+    border: 1px solid  $Ghost;
+  }
+  &.normal {
+   border: 1px solid $Normal;
+  }
+  &.grass {
+   border: 1px solid  $Grass;
+  }
+  &.ground {
+    border: 1px solid  $Ground;
+  }
+  &.ice {
+   border: 1px solid $Ice;
+  }
+  &.poison {
+    border: 1px solid $Poison;
+  }
+  &.psychic {
+    border: 1px solid $Psychic;
+  }
+  &.rock {
+   border: 1px solid $Rock;
+  }
+  &.steel {
+    border: 1px solid  $Steel;
+  }
+  &.water {
+    border: 1px solid  $Water;
+  }
+  &.normal {
+    border: 1px solid  $Medium;
+  }
+}
