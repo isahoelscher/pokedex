@@ -1,0 +1,69 @@
+@import "../../assets/global.scss";
+
+.type-badge {
+	font-family: $fontPrimary;
+	display: inline-block;
+	padding: 5px 5px;
+  margin: 2px 2px;
+	font-size: 10px;
+	color: $fontDark;
+	border-radius: 20px;
+
+  &.bug {
+    background-color: $Bug;
+  }
+  &.dark {
+    background-color: $Dark;
+  }
+  &.dragon {
+    background-color: $Dragon;
+  }
+  &.electric {
+    background-color: $Electric;
+  }
+  &.fairy {
+    background-color: $Fairy;
+  }
+  &.fighting {
+    background-color: $Fighting;
+  }
+  &.fire {
+    background-color: $Fire;
+  }
+  &.flying {
+    background-color: $Flying;
+  }
+  &.ghost {
+    background-color: $Ghost;
+  }
+  &.normal {
+    background-color: $Normal;
+  }
+  &.grass {
+    background-color: $Grass;
+  }
+  &.ground {
+    background-color: $Ground;
+  }
+  &.ice {
+    background-color: $Ice;
+  }
+  &.poison {
+    background-color: $Poison;
+  }
+  &.psychic {
+    background-color: $Psychic;
+  }
+  &.rock {
+    background-color: $Rock;
+  }
+  &.steel {
+    background-color: $Steel;
+  }
+  &.water {
+    background-color: $Water;
+  }
+  &.normal {
+    background-color: $Medium;
+  }
+}
