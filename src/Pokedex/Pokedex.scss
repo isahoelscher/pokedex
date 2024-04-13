@@ -4,15 +4,22 @@
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100vw;
-	height: 100vh;
-	overflow-y: scroll;
 	padding: 50px;
+	padding-top: 104px;
 
-  .list-pokemons { 
-  flex-direction: row;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  }
+	.list-pokemons {
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
+
+.loader-container {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+

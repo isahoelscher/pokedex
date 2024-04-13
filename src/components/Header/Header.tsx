@@ -1,4 +1,3 @@
-import React from "react";
 import { MdCatchingPokemon } from "react-icons/md";
 import "./Header.scss"
 

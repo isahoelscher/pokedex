@@ -1,6 +1,6 @@
 import axios from "axios";
 import { PokemonDetail } from "../interfaces/PokemonDetail";
-import { getPokemonDetails } from './getPokemonDetails';
+import { getPokemonDetails } from "./getPokemonDetails";
 import { API_URL } from "../../constants";
 
 export interface PokemonListInterface {
@@ -15,10 +15,15 @@ export interface ListPokemonsInterface {
 	results: PokemonDetail[];
 }
 
-export async function listPokemons(): Promise<ListPokemonsInterface> {
-	const endpoint = `${API_URL}/pokemon?limit=100`;
+export async function listPokemons(page: number, limit: number): Promise<ListPokemonsInterface> {
+	const endpoint = `${API_URL}/pokemon`;
 
-	const response = await axios.get<ListPokemonsInterface>(endpoint);
+	const response = await axios.get<ListPokemonsInterface>(endpoint, {
+		params: {
+			limit,
+			offset: (page - 1) * limit,
+		},
+	});
 
 	const promiseArr = response.data.results.map(async (pokemon) =>
 		getPokemonDetails(pokemon.name)

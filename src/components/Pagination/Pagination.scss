@@ -1,0 +1,39 @@
+@import "../../assets/global.scss";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  button {
+    font-family: $fontPrimary;
+    background-color: $Primary;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: $Fighting;
+    }
+  }
+
+  .current-page {
+    font-weight: 600;
+    font-family: $fontPrimary;
+    color: $fontDark;
+  }
+
+  .total-pages {
+    margin: 0 5px;
+  }
+}
